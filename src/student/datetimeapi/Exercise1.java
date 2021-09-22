@@ -1,9 +1,9 @@
 package student.datetimeapi;
 
-import java.time.*;
-import java.time.temporal.ChronoUnit;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Exercise1 {
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class Exercise1 {
         var randomDate = LocalDate.ofInstant(instant, ZoneId.systemDefault());
         System.out.println(randomDate);
         //Given the random date, find the date of the previous Thursday
+        //Hint: use TemporalAdjusters
 ;
     }
 
